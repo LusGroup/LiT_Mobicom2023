@@ -47,7 +47,7 @@ disp(['Cross-validation accuracy is ', num2str(validationAccuracy)]);
 function res = Process(Table,fileName)
     load(fileName);
     [~, name, ~] = fileparts(fileName);
-    T = autocorrlast(y1,y2);
+    T = segment(y1,y2);
     len = length(T);
     i = 1;
     while i<len
