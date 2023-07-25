@@ -12,7 +12,7 @@ This repository includes the following components:
 (1)Please download the Gerber file(Gerber PCB single pd.zip in hardware folder) and send it to a professional flexible PCB manufacturer to print the flexible PCB (one toothbrush needs two printed flexible PCBs). 
 (2)As shown in picture(hardware_deployment.jpg(middle)), connect the photosensors (flexible PCBs) and Arduino UNO with the Dupont wire and breadboard according to the circuit diagram (hardware_deployment.jpg(left)). Note
 that, the ADDR pins of the two photosensors were connected
-to the GND and VCC pins of the Arduino, respectively, to assign different addresses.
+to the GND and VCC pins of the Arduino, respectively, to assign different addresses.
 (3) As shown in picture(hardware_deployment.jpg(right)), glue two photosensors to the side
 of the toothbrush hand using silicone rubber near the top, and
 at approximately 60° from the toothbrush orientation, and then
