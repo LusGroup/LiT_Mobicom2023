@@ -6,8 +6,9 @@ This repository includes the following components:
  1.Workflow Instruction: Instructions on how to set up and run LiT successfully.  
  2.Hardware Deployment: Guidance and documentation for deploying LiT on the hardware.  
  3.Signal Processing Source Code: Source code for signal processing, enabling the analysis of light intensity changes.  
+ 
+ ## Folder
  ```
-## Folder 
 |-- data  
 |-- hardware  
     |-- Gerber_PCB_single_pd.zip  
