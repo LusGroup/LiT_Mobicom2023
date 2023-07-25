@@ -22,7 +22,13 @@ short-circuiting the sensor and ensured excellent light transmittance. Note that
 computer using a USB cable, and use Arduino IDE to burn the
 Arduino program (arduino code.ino in hardware folder)
 for Arduino UNO.
-
+(5) Connect the Arduino UNO to a personal computer using a USB cable, and use Matlab code
+(Step1 collect data.m) to collect a toothbrushing signal with Matlab.
+### SoftWare
+(1) matlab code(Step1 collect Data.m) was used to collect brushing data based on bass brushing method.
+We also provided data (in data folder)on 16 brushing surfaces for a single user for demonstration purposes.
+(2) Run the Step2 signal processing and analysis.m to execute the LiT algorithm’s MATLAB code, which processes the collected toothbrushing signal with labels.
+(3) Obtain the 10-fold cross-validation accuracy of toothbrushing surface recognition from the labeled data.
 ## Requirements
 ### HardWare dependencies
 1.Modified toothbrush hardware (containing Abitelax F7 blue light
