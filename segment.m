@@ -1,4 +1,4 @@
-% function res = autocorrlast(Signal1,Signal2)
+% function res = segment(Signal1,Signal2)
 % 返回经过分割之后的刷牙周期的开始和结束位置。
 %  输入:
 %      Signal1: 两段刷牙信号其中之一。
@@ -10,7 +10,7 @@
 %
 % 以下代码基于自相关进行周期分割，输出为找到的周期序列位置。
 
-function CycleArr = autocorrlast(Signal1,Signal2)
+function CycleArr = segment(Signal1,Signal2)
     [s1,scoor1] = seg(Signal1);
     [s2,scoor2] = seg(Signal2);
     if isempty(scoor1) || sum((scoor1)) < sum(scoor2)
