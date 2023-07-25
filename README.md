@@ -8,13 +8,14 @@ This repository includes the following components:
  &nbsp 3.Signal Processing Source Code: Source code for signal processing, enabling the analysis of light intensity changes.  
 
 ## How to Use
-
-    Follow the Workflow Instruction to set up LiT.
-    Refer to the Hardware Deployment guide for deploying the system on the toothbrush.
-    Utilize the Signal Processing Source Code to analyze and process the captured data.
+### HardWare
+(1)Please download the Gerber file(Gerber PCB single pd.zip in hardware folder) and send it to a professional flexible PCB manufacturer to print the flexible PCB (one toothbrush needs two printed flexible PCBs). 
+(2)As shown in Figure 2(middle), connect the photosensors (flexible PCBs) and Arduino UNO with the Dupont wire and breadboard according to the circuit diagram (Figure 2(left)). Note
+that, the ADDR pins of the two photosensors were connected
+to the GND and VCC pins of the Arduino, respectively, to assign different addresses.
 
 ## Requirements
-### HardWare
+### HardWare dependencies
 1.Modified toothbrush hardware (containing Abitelax F7 blue light
 sterilization electric toothbrush, Printed flexible PCB, Arduino UNO,
 DuPont wire, and Breadboard),
@@ -22,6 +23,8 @@ DuPont wire, and Breadboard),
 signal processing),
 3.USB cable (connecting Modified toothbrush hardware and personal
 computer).
+### SoftWare dependencies
+(1) Arduino IDE 1.8.19 for burning code to Arduino UNO, and (2)Matlab R2021a for signal processing.
 
 ## Contributions
 
