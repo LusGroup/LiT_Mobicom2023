@@ -16,7 +16,6 @@ Signal Processing Source Code: Source code for signal processing, enabling the a
 
     Commercial blue light sterilization toothbrushes with blue LEDs.
     2 low-cost photosensors.
-    Toothbrush head with the ability to mount photosensors.
     Development environment for running the signal processing code (e.g., MATLAB).
 
 ## Contributions
@@ -24,6 +23,6 @@ Signal Processing Source Code: Source code for signal processing, enabling the a
 Contributions to the project are welcome. If you encounter any issues or have suggestions for improvements, please feel free to open an issue or submit a pull request.
 ## License
 
-This project is licensed under the MIT License.
+This project is licensed under the GNU General Public License.
 
 For more details about LiT and its functionalities, please refer to the individual components of this repository.
