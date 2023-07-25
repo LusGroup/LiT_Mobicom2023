@@ -6,21 +6,21 @@ This repository includes the following components:
  1.Workflow Instruction: Instructions on how to set up and run LiT successfully.  
  2.Hardware Deployment: Guidance and documentation for deploying LiT on the hardware.  
  3.Signal Processing Source Code: Source code for signal processing, enabling the analysis of light intensity changes.  
- 
+ ```
 ## Folder 
--- data  
--- hardware  
+|-- data  
+|-- hardware  
     |-- Gerber_PCB_single_pd.zip  
     |-- arduino_code.ino  
     |-- jardware_deploument.jpg  
--- Step1_collect_data.m  
--- Step2_analysis_and_classification.m  
--- calculateFeature.m  
--- cancellation.m  
--- requirement.m  
--- segment.m  
--- trainClassifier.m  
-
+|-- Step1_collect_data.m  
+|-- Step2_analysis_and_classification.m  
+|-- calculateFeature.m  
+|-- cancellation.m  
+|-- requirement.m  
+|-- segment.m  
+|-- trainClassifier.m  
+```
 ## How to Use
 ### HardWare
 1.Download the Gerber file ('Gerber PCB single pd.zip' in the hardware folder) and send it to a professional flexible PCB manufacturer to print the flexible PCB (each toothbrush requires two printed flexible PCBs).   
