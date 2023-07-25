@@ -6,6 +6,20 @@ This repository includes the following components:
  1.Workflow Instruction: Instructions on how to set up and run LiT successfully.  
  2.Hardware Deployment: Guidance and documentation for deploying LiT on the hardware.  
  3.Signal Processing Source Code: Source code for signal processing, enabling the analysis of light intensity changes.  
+ 
+## Folder 
+-- data
+-- hardware
+    |-- Gerber_PCB_single_pd.zip
+    |-- arduino_code.ino
+    |-- jardware_deploument.jpg
+-- Step1_collect_data.m
+-- Step2_analysis_and_classification.m
+-- calculateFeature.m
+-- cancellation.m
+-- requirement.m
+-- segment.m
+-- trainClassifier.m
 
 ## How to Use
 ### HardWare
@@ -13,7 +27,6 @@ This repository includes the following components:
 2.Connect the photosensors (flexible PCBs) and Arduino UNO using Dupont wires and a breadboard, following the circuit diagram ('hardware_deployment.jpg' - left). Note that the ADDR pins of the two photosensors should be connected to the GND and VCC pins of the Arduino to assign different addresses.
 Note that, the ADDR pins of the two photosensors were connected to the GND and VCC pins of the Arduino, respectively, to assign different addresses.  
 3.Attach two photosensors to the side of the toothbrush handle near the top, at approximately 60° from the toothbrush orientation. Cover the sensors' surface with a layer of about 0.6mm transparent food-grade silicone rubber to prevent saliva from short-circuiting the sensors and ensure excellent light transmittance. Ensure that the silicone rubber is fully cured.  
-
 4.Connect the Arduino UNO to a personal computer using a USB cable and use the Arduino IDE to burn the program ('arduino code.ino' in the hardware folder) onto the Arduino UNO.  
 5.Connect the Arduino UNO to a personal computer using a USB cable and use the Matlab code ('Step1 collect data.m') to collect toothbrushing signals with Matlab.  
 ### SoftWare
@@ -21,6 +34,7 @@ Note that, the ADDR pins of the two photosensors were connected to the GND and V
 2.Run the 'Step2 signal_processing_and_analysis.m' file to execute the LiT algorithm's MATLAB code, which processes the collected toothbrushing signals with labels.
 3.Obtain the 10-fold cross-validation accuracy of toothbrushing surface recognition from the labeled data.  
 By following the above steps, you can set up and use the LiT toothbrushing monitoring system effectively. Please refer to the respective files and folders for detailed instructions and data.
+
 ## Requirements
 ### HardWare dependencies
 1.Modified toothbrush hardware (containing Abitelax F7 blue light sterilization electric toothbrush, Printed flexible PCB, Arduino UNO, DuPont wire, and Breadboard),
