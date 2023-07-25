@@ -8,18 +8,18 @@ This repository includes the following components:
  3.Signal Processing Source Code: Source code for signal processing, enabling the analysis of light intensity changes.  
  
 ## Folder 
--- data
--- hardware
-    |-- Gerber_PCB_single_pd.zip
-    |-- arduino_code.ino
-    |-- jardware_deploument.jpg
--- Step1_collect_data.m
--- Step2_analysis_and_classification.m
--- calculateFeature.m
--- cancellation.m
--- requirement.m
--- segment.m
--- trainClassifier.m
+-- data  
+-- hardware  
+    |-- Gerber_PCB_single_pd.zip  
+    |-- arduino_code.ino  
+    |-- jardware_deploument.jpg  
+-- Step1_collect_data.m  
+-- Step2_analysis_and_classification.m  
+-- calculateFeature.m  
+-- cancellation.m  
+-- requirement.m  
+-- segment.m  
+-- trainClassifier.m  
 
 ## How to Use
 ### HardWare
