@@ -1,10 +1,11 @@
 # LiT: Toothbrushing Monitoring System
 LiT is a toothbrushing monitoring system based on a commercial LED toothbrush. It utilizes commercial blue light sterilization toothbrushes, where blue LEDs are used as transmitters, and only 2 low-cost photosensors are required to be mounted on the toothbrush head as receivers. LiT is capable of monitoring 16 Bass technique surfaces by analyzing the dynamic light intensity change.
+
 ## Contents
 This repository includes the following components:
- 1.Workflow Instruction: Instructions on how to set up and run LiT successfully.
- 2.Hardware Deployment: Guidance and documentation for deploying LiT on the hardware.
- 3.Signal Processing Source Code: Source code for signal processing, enabling the analysis of light intensity changes.
+ 1.Workflow Instruction: Instructions on how to set up and run LiT successfully.  
+ 2.Hardware Deployment: Guidance and documentation for deploying LiT on the hardware.  
+ 3.Signal Processing Source Code: Source code for signal processing, enabling the analysis of light intensity changes.  
 
 ## How to Use
 
