@@ -16,8 +16,12 @@ to the GND and VCC pins of the Arduino, respectively, to assign different addre
 (3) As shown in picture(hardware_deployment.jpg(right)), glue two photosensors to the side
 of the toothbrush hand using silicone rubber near the top, and
 at approximately 60° from the toothbrush orientation, and then
-cover the sensors’ surface with a layer of about 0.6mm transparent food-grade silicone rubber, which prevented saliva from
-short-circuiting the sensor and ensured excellent light transmittance. Note that, make sure the silicone rubber is fully cured.
+cover the sensors’ surface with a layer of about 0.6mm transparent food-grade silicone rubber, which prevented saliva from
+short-circuiting the sensor and ensured excellent light transmittance. Note that, make sure the silicone rubber is fully cured.
+(4) As shown in Figure 3, connect the Arduino UNO to a personal
+computer using a USB cable, and use Arduino IDE to burn the
+Arduino program (arduino code.ino in hardware folder)
+for Arduino UNO.
 
 ## Requirements
 ### HardWare dependencies
