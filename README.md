@@ -14,16 +14,18 @@ This repository includes the following components:
     Utilize the Signal Processing Source Code to analyze and process the captured data.
 
 ## Requirements
-
-    Commercial blue light sterilization toothbrushes with blue LEDs.
-    2 low-cost photosensors.
-    Development environment for running the signal processing code (e.g., MATLAB).
+### HardWare
+1.Modified toothbrush hardware (containing Abitelax F7 blue light
+sterilization electric toothbrush, Printed flexible PCB, Arduino UNO,
+DuPont wire, and Breadboard),
+2.Windows Personal computer (used for Arduino code burning and
+signal processing),
+3.USB cable (connecting Modified toothbrush hardware and personal
+computer).
 
 ## Contributions
 
 Contributions to the project are welcome. If you encounter any issues or have suggestions for improvements, please feel free to open an issue or submit a pull request.
 ## License
-
 This project is licensed under the GNU General Public License.
-
 For more details about LiT and its functionalities, please refer to the individual components of this repository.
