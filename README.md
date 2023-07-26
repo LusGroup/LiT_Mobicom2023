@@ -33,8 +33,8 @@ Note that, the ADDR pins of the two photosensors were connected to the GND and V
 ### SoftWare
 &emsp;1.Use the Matlab code ('Step1 collect Data.m') to collect brushing data based on the bass brushing method. We also provide data (in the 'data' folder) on 16 brushing surfaces for a single user for demonstration purposes.  
 &emsp;2.Run the 'Step2 signal_processing_and_analysis.m' file to execute the LiT algorithm's MATLAB code, which processes the collected toothbrushing signals with labels.
-&emsp;3.Obtain the 10-fold cross-validation accuracy of toothbrushing surface recognition from the labeled data.  
-By following the above steps, you can set up and use the LiT toothbrushing monitoring system effectively. Please refer to the respective files and folders for detailed instructions and data.
+&emsp;3.Obtain the 10-fold cross-validation accuracy of toothbrushing surface recognition from the labeled data.   
+&emsp;By following the above steps, you can set up and use the LiT toothbrushing monitoring system effectively. Please refer to the respective files and folders for detailed instructions and data.
 
 ## Requirements
 ### HardWare dependencies
