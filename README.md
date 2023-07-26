@@ -3,7 +3,7 @@
 
 ## Description
 This repository includes the following components:  
-&emsp;1. Artifact Operation Demo: 
+&emsp;1. Artifact Operation Demo:  
 &emsp;2. Artifact Operation Description: Instructions on how to set up and run LiT successfully. (1) Hardware deployment guidance and (2) Software operation.  
 &emsp;3. Signal Processing Source Code: Source code for signal processing and brushing surface recognition.  
  
