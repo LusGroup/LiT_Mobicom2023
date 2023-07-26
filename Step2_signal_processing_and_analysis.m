@@ -2,6 +2,28 @@
 clc;
 clear all
 
+%%
+%画分割示例图
+color = [[0 0.4470 0.7410]; [0.8500 0.3250 0.0980]; [0 0.8 0];[0.9290 0.6940 0.1250]; [0.4940 0.1840 0.5560]; ...
+        [0.4660 0.6740 0.1880]; [0.3010 0.7450 0.9330]; [0.6350 0.0780 0.1840]];
+load ('data\up_left_in.mat');
+s=segment(y1,y2);
+figure;
+plot(1:length(y1),y1);
+hold on;
+plot(1:length(y2),y2);
+hold on;
+for k = 1:length(s)-1
+    c = mod(k,length(color))+1;
+hold on;
+    if (s(k+1)-s(k))<27
+        rectangle('Position',[s(k),3,(s(k+1)-s(k)),200],'LineWidth',2,'EdgeColor',color(c,:));
+    end
+end
+legend('Sensor 1','Sensor 2');
+xlabel('Sample Index');
+ylabel('Light Intensity (lux)');
+%%
 %表格初始化设置
 TrainData = table();
 colName={'MAX1';'MIN1';'STD1';'RMS1';'MAX2';'MIN2';'STD2';'RMS2';'Eucdistance';'CosDistance';'Correlation';'RMSDiff';'Class'};
