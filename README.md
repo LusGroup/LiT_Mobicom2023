@@ -25,7 +25,10 @@ This repository includes the following components:
 ```
 
 ## Demo
-jieshi
+You can get our artifact operation demo from the following YouTube URL:
+https://www.youtube.com/watch?v=-xzsgcQK2Oc
+If you have any questions about accessing this demo, please contact us at: 2017133035@email.szu.edu.cn
+
 ## How to Use
 ### HardWare
 &emsp;1. Download the Gerber file ('Gerber PCB single pd.zip' in the hardware folder) and send it to a professional flexible PCB manufacturer to print the flexible PCB (each toothbrush requires two printed flexible PCBs).   
