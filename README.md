@@ -22,6 +22,7 @@ This repository includes the following components:
 |-- segment.m  
 |-- trainClassifier.m
 |-- demo_address
+|-- Artifact_description.pdf
 ```
 
 ## Demo
