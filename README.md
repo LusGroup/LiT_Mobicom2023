@@ -3,7 +3,7 @@ LiT is a toothbrushing monitoring system based on a commercial LED toothbrush. I
 
 ## Description
 This repository includes the following components:  
-&nbsp;&nbsp;1.Workflow Instruction: Instructions on how to set up and run LiT successfully.  
+&emsp;&emsp;1.Workflow Instruction: Instructions on how to set up and run LiT successfully.  
 &nbsp;&nbsp;2.Hardware Deployment: Guidance and documentation for deploying LiT on the hardware.  
 &nbsp;&nbsp;3.Signal Processing Source Code: Source code for signal processing, enabling the analysis of light intensity changes.  
  
