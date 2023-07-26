@@ -15,13 +15,13 @@ This repository includes the following components:
     |-- arduino_code.ino  
     |-- jardware_deployment.jpg  
 |-- Step1_collect_data.m  
-|-- Step2_analysis_and_classification.m  
+|-- Step2_signal_processing_and_analysis.m  
 |-- calculateFeature.m  
 |-- cancellation.m  
-|-- requirement.m  
+|-- requirement  
 |-- segment.m  
 |-- trainClassifier.m
-|-- demo_address.m
+|-- demo_address
 ```
 
 ## Demo
