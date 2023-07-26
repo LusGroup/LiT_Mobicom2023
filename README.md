@@ -24,27 +24,27 @@ This repository includes the following components:
 ```
 ## How to Use
 ### HardWare
-1.Download the Gerber file ('Gerber PCB single pd.zip' in the hardware folder) and send it to a professional flexible PCB manufacturer to print the flexible PCB (each toothbrush requires two printed flexible PCBs).   
-2.Connect the photosensors (flexible PCBs) and Arduino UNO using Dupont wires and a breadboard, following the circuit diagram ('hardware_deployment.jpg' - left). Note that the ADDR pins of the two photosensors should be connected to the GND and VCC pins of the Arduino to assign different addresses.
+&emsp;1.Download the Gerber file ('Gerber PCB single pd.zip' in the hardware folder) and send it to a professional flexible PCB manufacturer to print the flexible PCB (each toothbrush requires two printed flexible PCBs).   
+&emsp;2.Connect the photosensors (flexible PCBs) and Arduino UNO using Dupont wires and a breadboard, following the circuit diagram ('hardware_deployment.jpg' - left). Note that the ADDR pins of the two photosensors should be connected to the GND and VCC pins of the Arduino to assign different addresses.
 Note that, the ADDR pins of the two photosensors were connected to the GND and VCC pins of the Arduino, respectively, to assign different addresses.  
-3.Attach two photosensors to the side of the toothbrush handle near the top, at approximately 60° from the toothbrush orientation. Cover the sensors' surface with a layer of about 0.6mm transparent food-grade silicone rubber to prevent saliva from short-circuiting the sensors and ensure excellent light transmittance. Ensure that the silicone rubber is fully cured.  
-4.Connect the Arduino UNO to a personal computer using a USB cable and use the Arduino IDE to burn the program ('arduino code.ino' in the hardware folder) onto the Arduino UNO.  
-5.Connect the Arduino UNO to a personal computer using a USB cable and use the Matlab code ('Step1 collect data.m') to collect toothbrushing signals with Matlab.  
+&emsp;3.Attach two photosensors to the side of the toothbrush handle near the top, at approximately 60° from the toothbrush orientation. Cover the sensors' surface with a layer of about 0.6mm transparent food-grade silicone rubber to prevent saliva from short-circuiting the sensors and ensure excellent light transmittance. Ensure that the silicone rubber is fully cured.  
+&emsp;4.Connect the Arduino UNO to a personal computer using a USB cable and use the Arduino IDE to burn the program ('arduino code.ino' in the hardware folder) onto the Arduino UNO.  
+&emsp;5.Connect the Arduino UNO to a personal computer using a USB cable and use the Matlab code ('Step1 collect data.m') to collect toothbrushing signals with Matlab.  
 ### SoftWare
-1.Use the Matlab code ('Step1 collect Data.m') to collect brushing data based on the bass brushing method. We also provide data (in the 'data' folder) on 16 brushing surfaces for a single user for demonstration purposes.  
-2.Run the 'Step2 signal_processing_and_analysis.m' file to execute the LiT algorithm's MATLAB code, which processes the collected toothbrushing signals with labels.
-3.Obtain the 10-fold cross-validation accuracy of toothbrushing surface recognition from the labeled data.  
+&emsp;1.Use the Matlab code ('Step1 collect Data.m') to collect brushing data based on the bass brushing method. We also provide data (in the 'data' folder) on 16 brushing surfaces for a single user for demonstration purposes.  
+&emsp;2.Run the 'Step2 signal_processing_and_analysis.m' file to execute the LiT algorithm's MATLAB code, which processes the collected toothbrushing signals with labels.
+&emsp;3.Obtain the 10-fold cross-validation accuracy of toothbrushing surface recognition from the labeled data.  
 By following the above steps, you can set up and use the LiT toothbrushing monitoring system effectively. Please refer to the respective files and folders for detailed instructions and data.
 
 ## Requirements
 ### HardWare dependencies
-1.Modified toothbrush hardware (containing Abitelax F7 blue light sterilization electric toothbrush, Printed flexible PCB, Arduino UNO, DuPont wire, and Breadboard),
-2.Windows Personal computer (used for Arduino code burning and signal processing),
-3.USB cable (connecting Modified toothbrush hardware and personal computer).
+&emsp;1.Modified toothbrush hardware (containing Abitelax F7 blue light sterilization electric toothbrush, Printed flexible PCB, Arduino UNO, DuPont wire, and Breadboard),
+&emsp;2.Windows Personal computer (used for Arduino code burning and signal processing),
+&emsp;3.USB cable (connecting Modified toothbrush hardware and personal computer).
 ### SoftWare dependencies
-(1) Arduino IDE 1.8.19 for burning code to Arduino UNO, and (2)Matlab R2021a for signal processing.
+&emsp;(1) Arduino IDE 1.8.19 for burning code to Arduino UNO, and (2)Matlab R2021a for signal processing.
 ## Contributions
-Contributions to the project are welcome. If you encounter any issues or have suggestions for improvements, please feel free to open an issue or submit a pull request.
+&emsp;Contributions to the project are welcome. If you encounter any issues or have suggestions for improvements, please feel free to open an issue or submit a pull request.
 ## License
 This project is licensed under the GNU General Public License.
 For more details about LiT and its functionalities, please refer to the individual components of this repository.
