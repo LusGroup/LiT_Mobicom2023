@@ -27,17 +27,11 @@ while(t<interval)
         y1=[y1,a5];
         y2=[y2,a4];
     else
-        fclose(instrfind);
-        fclose(s);
-        
-        fopen(s); %b=str2num(fgetl(s));
-%         break;
+        break;
     end
-    if ~isempty(y1) && ~isempty(y2)
     plot(y1,'-b', 'LineWidth',2);
     hold on;
     plot(y2,'-.r', 'LineWidth',2);
-    end
     t=t+1;
     drawnow;
 end
