@@ -26,7 +26,7 @@ This repository includes the following components:
 ```
 
 ## Demo
-You can get our artifact operation demo from the following YouTube URL:  
+You can get our artifact operation demo from the following YouTube URL: 
 https://youtu.be/ZDvkZsqzj4I  
 If you have any questions about accessing this demo, please contact us at: 2017133035@email.szu.edu.cn
 
