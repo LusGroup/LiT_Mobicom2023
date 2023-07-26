@@ -20,8 +20,12 @@ This repository includes the following components:
 |-- cancellation.m  
 |-- requirement.m  
 |-- segment.m  
-|-- trainClassifier.m  
+|-- trainClassifier.m
+|-- demo_address.m
 ```
+
+## Demo
+jieshi
 ## How to Use
 ### HardWare
 &emsp;1. Download the Gerber file ('Gerber PCB single pd.zip' in the hardware folder) and send it to a professional flexible PCB manufacturer to print the flexible PCB (each toothbrush requires two printed flexible PCBs).   
