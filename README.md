@@ -38,8 +38,8 @@ Note that, the ADDR pins of the two photosensors were connected to the GND and V
 
 ## Requirements
 ### HardWare dependencies
-&emsp;1.Modified toothbrush hardware (containing Abitelax F7 blue light sterilization electric toothbrush, Printed flexible PCB, Arduino UNO, DuPont wire, and Breadboard),
-&emsp;2.Windows Personal computer (used for Arduino code burning and signal processing),
+&emsp;1.Modified toothbrush hardware (containing Abitelax F7 blue light sterilization electric toothbrush, Printed flexible PCB, Arduino UNO, DuPont wire, and Breadboard).  
+&emsp;2.Windows Personal computer (used for Arduino code burning and signal processing).  
 &emsp;3.USB cable (connecting Modified toothbrush hardware and personal computer).
 ### SoftWare dependencies
 &emsp;(1) Arduino IDE 1.8.19 for burning code to Arduino UNO, and (2)Matlab R2021a for signal processing.
