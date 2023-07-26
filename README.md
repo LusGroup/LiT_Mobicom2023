@@ -43,8 +43,6 @@ Note that, the ADDR pins of the two photosensors were connected to the GND and V
 &emsp;3.USB cable (connecting Modified toothbrush hardware and personal computer).
 ### SoftWare dependencies
 &emsp;(1) Arduino IDE 1.8.19 for burning code to Arduino UNO, and (2)Matlab R2021a for signal processing.
-## Contributions
-&emsp;Contributions to the project are welcome. If you encounter any issues or have suggestions for improvements, please feel free to open an issue or submit a pull request.
 ## License
 This project is licensed under the GNU General Public License.
 For more details about LiT and its functionalities, please refer to the individual components of this repository.
