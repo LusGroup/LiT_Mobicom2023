@@ -50,7 +50,7 @@ N = length(target1);
     while i<= N % && i>=101
         if i< 27 %如果前面没有27个点，大约三个周期的刷牙信号
         elseif i>= 27%如果有27个点，那就开始判断当前窗口是否有27个点
-            A1 = mapminmax(target1(start+i-27:size+i-27),-1,1);%对信号做归一化
+            A1 = mapminmax(target1(start+i-27:size+i-27));%对信号做归一化
             [arr_sim,arr_min,arr_max] = mycorr1(A1,size);%获取当前的自相关函数，极小值，极大值点
             if ~isempty(arr_max) && ~isempty(arr_min) && length(arr_min) == length(arr_max) && all(arr_min <arr_max)%如果极大值极小值数量相等，并且先有极小值再有极大值
                 logical_array_min = (arr_sim(arr_min) <=-0.15);%每对极大极小值都阈值计算一下
@@ -139,4 +139,10 @@ N = length(target1);
         i=i+1;%数据长度加1
     end
 
+end
+
+function [normalized_data] = mapminmax(data)
+min_val = min(data); % 获取最小值
+max_val = max(data); % 获取最大值
+normalized_data = (data - min_val) * (2/(max_val - min_val)) - 1; % 归一化公式
 end
