@@ -3,9 +3,10 @@
 
 ## Description
 This repository includes the following components:  
-&emsp;1. Artifact Operation Demo: Preparatory work guidance and a complete artifact usage example.  
-&emsp;2. Artifact Operation Description: Instructions on how to set up and run LiT successfully. (1) Hardware deployment guidance and (2) Software operation.  
-&emsp;3. Signal Processing Source Code: Source code for signal processing and brushing surface recognition.  
+&emsp;1. Artifact Operation Demo (demo_address file): Preparatory work guidance and a complete artifact usage example.  
+&emsp;2. Artifact Operation Description (Artifact_description): Instructions on how to set up and run LiT successfully.
+&emsp;3. Hardware deployment guidance ():
+&emsp;4. Signal Processing Source Code (): Source code for signal processing and brushing surface recognition.
  
  ## Folder
  ```
@@ -13,7 +14,7 @@ This repository includes the following components:
 |-- hardware  
     |-- Gerber_PCB_single_pd.zip  
     |-- arduino_code.ino  
-    |-- Hardware_deployment.jpg  
+    |-- hardware_deployment.jpg  
 |-- Step1_collect_data.m  
 |-- Step2_signal_processing_and_analysis.m  
 |-- calculateFeature.m  
