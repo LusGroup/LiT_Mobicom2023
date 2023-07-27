@@ -13,7 +13,7 @@ This repository includes the following components:
 |-- hardware  
     |-- Gerber_PCB_single_pd.zip  
     |-- arduino_code.ino  
-    |-- jardware_deployment.jpg  
+    |-- Hardware_deployment.jpg  
 |-- Step1_collect_data.m  
 |-- Step2_signal_processing_and_analysis.m  
 |-- calculateFeature.m  
