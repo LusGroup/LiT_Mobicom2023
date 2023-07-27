@@ -6,7 +6,7 @@ This repository includes the following components:
 &emsp;1. Artifact Operation Demo (demo_address file): Preparatory work guidance and a complete artifact usage example.  
 &emsp;2. Artifact Operation Description (Artifact_description.pdf): Instructions on how to set up and run LiT successfully.
 &emsp;3. Hardware Deployment Source Files and Deployment Guidance (hardware folder): 
-&emsp;4. Software Source Code (files under the current folder): Source code for signal processing and brushing surface recognition.
+&emsp;4. Software Source Code (files under main bunch): Source code for signal processing and brushing surface recognition.
  
  ## Folder
  ```
