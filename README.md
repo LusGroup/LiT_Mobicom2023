@@ -5,8 +5,8 @@
 This repository includes the following components:  
 &emsp;1. Artifact Operation Demo (demo_address file): Preparatory work guidance and a complete artifact usage example.  
 &emsp;2. Artifact Operation Description (Artifact_description.pdf): Instructions on how to set up and run LiT successfully.
-&emsp;3. Hardware Deployment Source Files and Deployment Guidance (hardware folder): 
-&emsp;4. Software Source Code (files under main bunch): Source code for signal processing and brushing surface recognition.
+&emsp;3. Hardware Source Files (hardware folder): Source files and guidance for hardware deployment.
+&emsp;4. Software Source Code (all Matlab files): Source code for signal processing and brushing surface recognition.
  
  ## Folder
  ```
@@ -33,7 +33,7 @@ If you have any questions about accessing this demo, please contact us at: 20171
 
 ## How to Use
 ### HardWare
-&emsp;1. Download the Gerber file ('Gerber PCB single pd.zip' in the hardware folder) and send it to a professional flexible PCB manufacturer to print the flexible PCB (each toothbrush requires two printed flexible PCBs).   
+&emsp;1. Download the Gerber file ('Gerber_PCB_single_pd.zip' in the hardware folder) and send it to a professional flexible PCB manufacturer to print the flexible PCB (each toothbrush requires two printed flexible PCBs).   
 &emsp;2. Connect the photosensors (flexible PCBs) and Arduino UNO using Dupont wires and a breadboard, following the circuit diagram ('hardware_deployment.jpg' - left). Note that the ADDR pins of the two photosensors should be connected to the GND and VCC pins of the Arduino to assign different addresses.
 Note that, the ADDR pins of the two photosensors were connected to the GND and VCC pins of the Arduino, respectively, to assign different addresses.  
 &emsp;3. Attach two photosensors to the side of the toothbrush handle near the top, at approximately 60° from the toothbrush orientation. Cover the sensors' surface with a layer of about 0.6mm transparent food-grade silicone rubber to prevent saliva from short-circuiting the sensors and ensure excellent light transmittance. Ensure that the silicone rubber is fully cured.  
