@@ -76,3 +76,18 @@ partitionedModel = crossval(trainedClassifier.ClassificationKNN, 'KFold', 5);
 
 % 计算验证准确度
 validationAccuracy = 1 - kfoldLoss(partitionedModel, 'LossFun', 'ClassifError');
+
+
+% 计算混淆矩阵
+predictedLabels = table(validationPredictions, 'VariableNames', {'Categories'});
+confusionMatrix = confusionmat(trainingData(:,13).Class', predictedLabels.Categories');
+
+% 显示混淆矩阵
+disp('Confusion Matrix:');
+disp(confusionMatrix);
+
+% 绘制混淆矩阵
+figure;
+lables = {'low front in','low front out','low left in','low left occ','low left out','low right in','low right occ','low right out',...
+    'up front in','up front out','up left in','up left occ','up left out','up right in','up right occ','up right out'};
+heatmap(lables, lables, confusionMatrix ,'Title', 'Confusion Matrix', 'XLabel', 'Predicted Labels', 'YLabel', 'True Labels', 'ColorbarVisible', 'off');
