@@ -82,12 +82,38 @@ validationAccuracy = 1 - kfoldLoss(partitionedModel, 'LossFun', 'ClassifError');
 predictedLabels = table(validationPredictions, 'VariableNames', {'Categories'});
 confusionMatrix = confusionmat(trainingData(:,13).Class', predictedLabels.Categories');
 
-% 显示混淆矩阵
-disp('Confusion Matrix:');
-disp(confusionMatrix);
+% 将混淆矩阵中的数字转换为百分比
+confusionMatrixPercentage = (confusionMatrix ./ sum(confusionMatrix, 2)) * 100;
 
-% 绘制混淆矩阵
-figure;
-lables = {'low front in','low front out','low left in','low left occ','low left out','low right in','low right occ','low right out',...
+% 绘制混淆矩阵热力图
+figure('Units', 'normalized', 'Position', [0.1, 0.1, 0.6, 0.6]);
+labels = {'low front in','low front out','low left in','low left occ','low left out','low right in','low right occ','low right out',...
     'up front in','up front out','up left in','up left occ','up left out','up right in','up right occ','up right out'};
-heatmap(lables, lables, confusionMatrix ,'Title', 'Confusion Matrix', 'XLabel', 'Predicted Labels', 'YLabel', 'True Labels', 'ColorbarVisible', 'off');
+
+
+h = imagesc(confusionMatrixPercentage);
+colormap parula; % 使用 parula 颜色映射
+colorbar;
+caxis([0 100]); % 设置颜色映射的范围为0到100
+
+% 在每个单元格上添加百分比文本标签（调整字体大小）
+for i = 1:size(confusionMatrixPercentage, 1)
+    for j = 1:size(confusionMatrixPercentage, 2)
+        text(j, i, sprintf('%.2f%%', confusionMatrixPercentage(i, j)), ...
+            'HorizontalAlignment', 'center', ...
+            'VerticalAlignment', 'middle', ...
+            'Color', 'black', 'FontWeight', 'bold', ...
+            'FontSize', 10); % 注意修正此处
+    end
+end
+
+% 设置坐标轴标签
+xticks(1:16);
+xticklabels(labels);
+yticks(1:16);
+yticklabels(labels);
+xtickangle(45);
+
+title('Confusion Matrix (Percentages)');
+xlabel('Predicted Labels');
+ylabel('True Labels');
